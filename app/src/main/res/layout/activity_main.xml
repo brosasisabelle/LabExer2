@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.isabelle.labexer2.MainActivity">
+
+    <TextView
+        android:id="@+id/tvusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:text="Username:"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp" />
+
+    <TextView
+        android:id="@+id/tvpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Password:"
+        android:textSize="18sp"
+        android:layout_below="@+id/tvusername"
+        android:layout_alignLeft="@+id/tvusername"
+        android:layout_alignStart="@+id/tvusername" />
+
+    <EditText
+        android:id="@+id/etusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignBaseline="@+id/tvusername"
+        android:layout_alignBottom="@+id/tvusername"
+        android:layout_alignLeft="@+id/etpassword"
+        android:layout_alignStart="@+id/etpassword" />
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:inputType="textPassword"
+        android:layout_alignBaseline="@+id/tvpassword"
+        android:layout_alignBottom="@+id/tvpassword"
+        android:layout_alignLeft="@+id/saveShared"
+        android:layout_alignStart="@+id/saveShared" />
+
+    <Button
+        android:id="@+id/saveShared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="savepref"
+        android:text="Shared Preferences" />
+
+    <Button
+        android:id="@+id/saveInternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saveShared"
+        android:layout_marginTop="36dp"
+        android:onClick="savestore"
+        android:text="Internal Storage"
+        android:layout_alignLeft="@+id/saveShared"
+        android:layout_alignStart="@+id/saveShared"
+        android:layout_alignRight="@+id/saveShared"
+        android:layout_alignEnd="@+id/saveShared" />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saveInternal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:onClick="nextact"
+        android:text="Next" />
+
+</RelativeLayout>

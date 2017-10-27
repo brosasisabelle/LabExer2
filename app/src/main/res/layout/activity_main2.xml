@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.isabelle.labexer2.Main2Activity">
+
+    <Button
+        android:id="@+id/loadShared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:onClick="loadpref"
+        android:text="Load Shared Preferences" />
+
+    <Button
+        android:id="@+id/loadInternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadShared"
+        android:layout_marginTop="33dp"
+        android:onClick="loadstore"
+        android:text="Load Internal Storage"
+        android:layout_alignRight="@+id/loadShared"
+        android:layout_alignEnd="@+id/loadShared"
+        android:layout_alignLeft="@+id/loadShared"
+        android:layout_alignStart="@+id/loadShared" />
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/loadInternal"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="32dp"
+        android:onClick="cleardisplay"
+        android:text="Clear" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/clearBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:onClick="backact"
+        android:text="Back" />
+
+    <TextView
+        android:id="@+id/tvdisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/clearBtn"
+        android:layout_alignStart="@+id/clearBtn"
+        android:layout_below="@+id/clearBtn"
+        android:layout_marginTop="45dp"
+        android:textSize="18sp" />
+
+</RelativeLayout>
