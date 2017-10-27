@@ -34,24 +34,26 @@
         android:id="@+id/etusername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:layout_alignBaseline="@+id/tvusername"
         android:layout_alignBottom="@+id/tvusername"
         android:layout_alignLeft="@+id/etpassword"
-        android:layout_alignStart="@+id/etpassword" />
+        android:layout_alignStart="@+id/etpassword"
+        android:ems="10"
+        android:hint="Enter Username" />
 
     <EditText
         android:id="@+id/etpassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginLeft="17dp"
-        android:layout_marginStart="17dp"
-        android:inputType="textPassword"
         android:layout_alignBaseline="@+id/tvpassword"
         android:layout_alignBottom="@+id/tvpassword"
         android:layout_alignLeft="@+id/saveShared"
-        android:layout_alignStart="@+id/saveShared" />
+        android:layout_alignStart="@+id/saveShared"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/saveShared"
@@ -66,10 +68,10 @@
         android:id="@+id/saveInternal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/saveShared"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="34dp"
         android:onClick="savestore"
         android:text="Internal Storage"
+        android:layout_below="@+id/saveShared"
         android:layout_alignLeft="@+id/saveShared"
         android:layout_alignStart="@+id/saveShared"
         android:layout_alignRight="@+id/saveShared"
